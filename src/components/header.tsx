@@ -1,4 +1,6 @@
-
+import cross from "../assets/cross.svg";
+import select from "../assets/select.svg";
+import tic from "../assets/tic-mark.svg";
 
 export default function Header() {
 
@@ -10,14 +12,19 @@ export default function Header() {
       <div className="aside">
         <div className="aside-content">
         <p className="content">
-          Choose another country or region to see content specific to your location and
+          Choose another country or region to see content specific to your location and shop online
         </p>
         <div className="search-country">
-          <div className="search-bar">
-            <img src="#" alt="search icon" />
-          </div>
-          <button>
+          <button className="search-bar">
+            <img src={tic} alt="tic-mark" />
+            <p>United State</p>
+            <img src={select} alt="selection" />
+          </button>
+          <button className="continue">
             Continue
+          </button>
+          <button className="search-cross">
+             <img src={cross} alt="cross"/>
           </button>
         </div>
         </div>
