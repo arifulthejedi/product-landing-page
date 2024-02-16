@@ -2,6 +2,13 @@ import cross from "../assets/cross.svg";
 import select from "../assets/select.svg";
 import tic from "../assets/tic-mark.svg";
 
+
+//nav icons
+import cart from "../assets/cart.svg";
+import apple from "../assets/apple.svg";
+import search from "../assets/search.svg";
+
+
 export default function Header() {
 
 
@@ -30,10 +37,10 @@ export default function Header() {
         </div>
       </div>
       <nav>
-        <div className="header-logo">
-          <img src="#" />
-        </div>
         <ul className="manu-container">
+        <li className="manu-item header-logo">
+           <img src={apple} alt="apple logo" />
+        </li>
           <li className="manu-item">Store</li>
           <li className="manu-item">Mac</li>
           <li className="manu-item">iPad</li>
@@ -43,13 +50,13 @@ export default function Header() {
           <li className="manu-item">Entertainment</li>
           <li className="manu-item">Accessories</li>
           <li className="manu-item">Support</li>
+          <li className="manu-item nav-search-bar">
+             <img src={search} alt="search logo" />
+          </li>
+          <li className="manu-item shoping-cart">
+             <img src={cart} alt="cart" />
+          </li>
         </ul>
-        <div className="header-search-bar">
-          <img src="#" alt="search logo" />
-        </div>
-        <div className="shoping-card">
-          <img src="#" alt="shoping logo" />
-        </div>
       </nav>
     </header>
   </>
